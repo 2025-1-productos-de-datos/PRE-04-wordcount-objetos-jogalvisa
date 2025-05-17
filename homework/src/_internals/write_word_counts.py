@@ -1,7 +1,7 @@
 import os
 
 
-class WriteWordCountsMixin:
+class WriteWordCountMixin:
     def write_word_counts(self):
         """Write word counts to a file in the output folder."""
 

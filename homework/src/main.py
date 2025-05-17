@@ -1,5 +1,5 @@
 
-from homework.src._internals.write_word_count import WriteWordCountMixin
+from homework.src._internals.write_word_counts import WriteWordCountMixin
 from homework.src._internals.split_into_words import SplitIntoWordsMixin
 from homework.src._internals.read_all_lines import ReadAllLinesMixin
 from homework.src._internals.count_words import CountWordsMixin
@@ -30,7 +30,7 @@ class WordCountApp(
         self.preprocess_lines()
         self.split_into_words()
         self.count_words()
-        self.write_word_count()
+        self.write_word_counts()
 
 
 if __name__ == "__main__":
