@@ -22,7 +22,7 @@ def test_homework():
             raise Exception(f"'{path}' directory does not exist")
     try:
         subprocess.run(
-            ["python3", "-m", "homework", "data/input", "data/output"],
+            ["python", "-m", "homework", "data/input", "data/output"],
             check=True,
         )
     except subprocess.CalledProcessError as e:
@@ -47,3 +47,4 @@ def test_homework():
     assert result.get("by", 0) == 3, "Incorrect count for 'by'"
     assert result.get("algorithms", 0) == 2, "Incorrect count for 'algorithms'"
     assert result.get("analysis", 0) == 4, "Incorrect count for 'analysis'"
+    
